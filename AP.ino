@@ -7,5 +7,11 @@ void setup() {
   WiFi.softAP(WIFI_AP_NAME, WIFI_AP_PASS);
   Serial.print("IP address: ");
   Serial.println(WiFi.softAPIP());
+  pinMode(8,OUTPUT);
 }
-void loop() { }
+void loop() { 
+  digitalWrite(8,LOW);
+  delay(500);
+  digitalWirit(8,HIGH);
+  delay(500);
+}
